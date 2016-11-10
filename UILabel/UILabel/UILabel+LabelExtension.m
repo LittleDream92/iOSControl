@@ -62,6 +62,23 @@
     self.attributedText = textString;
 }
 
+/** 设置中划线——自定义颜色
+ *  @param text 要设置中划线的字体
+ *  @param textColor    要设置中划线的颜色
+ */
+- (void)setThroughLineWithText:(NSString *)text color:(UIColor *)textColor {
+    //获取label的带属性的字符串
+    NSMutableAttributedString *textString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
+    
+    //计算颜色字符串的范围
+    NSRange lineRange = NSMakeRange([[textString string] rangeOfString:text].location, [[textString string] rangeOfString:text].length);
+    
+    [textString addAttribute:NSStrikethroughStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:lineRange];
+    [textString addAttribute:NSStrikethroughColorAttributeName value:textColor range:lineRange];
+    
+    self.attributedText = textString;
+}
+
 
 /** 设置下划线
  *  @param text  要设置下划线的字体
@@ -79,7 +96,22 @@
     self.attributedText = textString;
 }
 
-
+/** 设置下划线——自定义颜色
+ *  @param text 要设置下划线的字体
+ *  @param textColor    要设置下划线的颜色
+ */
+- (void)setUnderLineWithText:(NSString *)text color:(UIColor *)textColor {
+    //获取label的带属性的字符串
+    NSMutableAttributedString *textString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
+    
+    //计算颜色字符串的范围
+    NSRange lineRange = NSMakeRange([[textString string] rangeOfString:text].location, [[textString string] rangeOfString:text].length);
+    
+    [textString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:lineRange];
+    [textString addAttribute:NSUnderlineColorAttributeName value:textColor range:lineRange];
+    
+    self.attributedText = textString;
+}
 
 
 /** 设置多行label的行距

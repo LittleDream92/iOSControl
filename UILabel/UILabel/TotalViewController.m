@@ -47,11 +47,11 @@
     //设置中划线
     [self.label setThroughLineWithText:@"就是现在学习英语"];
     //设置带样式的中划线
-    [self.label setThroughLineWithText:@"有说要结合阅读材料学习记忆"];
+    [self.label setThroughLineWithText:@"有说要结合阅读材料学习记忆" color:[UIColor blackColor]];
     
     //设置下划线
     [self.label setUnderLineWithText:@"有说要结合阅读材料学习记忆"];
-    [self.label setUnderLineWithText:@"比如考完4级那么就"];
+    [self.label setUnderLineWithText:@"比如考完4级那么就" color:[UIColor redColor]];
     
     //设置行距
     [self.label changeLabelSpaceWithSpace:20 text:self.label.text];

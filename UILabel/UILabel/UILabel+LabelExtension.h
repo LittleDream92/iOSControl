@@ -50,12 +50,24 @@
  */
 - (void)setThroughLineWithText:(NSString *)text;
 
+/** 设置中划线——自定义颜色
+ *  @param text 要设置中划线的字体
+ *  @param textColor    要设置中划线的颜色
+ */
+- (void)setThroughLineWithText:(NSString *)text color:(UIColor *)textColor;
+
 
 
 /** 设置下划线
  *  @param text  要设置下划线的字体
  */
 - (void)setUnderLineWithText:(NSString *)text;
+
+/** 设置下划线——自定义颜色
+ *  @param text 要设置下划线的字体
+ *  @param textColor    要设置下划线的颜色
+ */
+- (void)setUnderLineWithText:(NSString *)text color:(UIColor *)textColor;
 
 
 /** 设置多行label的行距
