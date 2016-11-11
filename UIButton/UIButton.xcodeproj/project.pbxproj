@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8DF86801DD423FB009B25AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF867F1DD423FB009B25AD /* main.m */; };
+		A8DF86831DD423FB009B25AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86821DD423FB009B25AD /* AppDelegate.m */; };
+		A8DF86861DD423FB009B25AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86851DD423FB009B25AD /* ViewController.m */; };
+		A8DF86891DD423FB009B25AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DF86871DD423FB009B25AD /* Main.storyboard */; };
+		A8DF868B1DD423FB009B25AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DF868A1DD423FB009B25AD /* Assets.xcassets */; };
+		A8DF868E1DD423FB009B25AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DF868C1DD423FB009B25AD /* LaunchScreen.storyboard */; };
+		A8DF86971DD425C3009B25AD /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86961DD425C3009B25AD /* CustomButtonViewController.m */; };
+		A8DF869A1DD42684009B25AD /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86991DD42684009B25AD /* CustomButton.m */; };
+		A8DF869C1DD44F8D009B25AD /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DF869B1DD44F8D009B25AD /* 1.png */; };
+		A8DF869E1DD44F93009B25AD /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8DF869D1DD44F93009B25AD /* 2.png */; };
+		A8DF86A11DD4559E009B25AD /* TimerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86A01DD4559E009B25AD /* TimerButtonViewController.m */; };
+		A8DF86A41DD45DA4009B25AD /* NumberButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86A31DD45DA4009B25AD /* NumberButtonViewController.m */; };
+		A8DF86A91DD4600F009B25AD /* NumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86A81DD4600F009B25AD /* NumberButton.m */; };
+		A8DF86AC1DD46B19009B25AD /* NSString+NumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86AB1DD46B19009B25AD /* NSString+NumberButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8DF867B1DD423FB009B25AD /* UIButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DF867F1DD423FB009B25AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8DF86811DD423FB009B25AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8DF86821DD423FB009B25AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8DF86841DD423FB009B25AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A8DF86851DD423FB009B25AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A8DF86881DD423FB009B25AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8DF868A1DD423FB009B25AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8DF868D1DD423FB009B25AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8DF868F1DD423FB009B25AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DF86951DD425C3009B25AD /* CustomButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonViewController.h; sourceTree = "<group>"; };
+		A8DF86961DD425C3009B25AD /* CustomButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonViewController.m; sourceTree = "<group>"; };
+		A8DF86981DD42684009B25AD /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		A8DF86991DD42684009B25AD /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		A8DF869B1DD44F8D009B25AD /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A8DF869D1DD44F93009B25AD /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		A8DF869F1DD4559E009B25AD /* TimerButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButtonViewController.h; sourceTree = "<group>"; };
+		A8DF86A01DD4559E009B25AD /* TimerButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButtonViewController.m; sourceTree = "<group>"; };
+		A8DF86A21DD45DA4009B25AD /* NumberButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberButtonViewController.h; sourceTree = "<group>"; };
+		A8DF86A31DD45DA4009B25AD /* NumberButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberButtonViewController.m; sourceTree = "<group>"; };
+		A8DF86A71DD4600F009B25AD /* NumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberButton.h; sourceTree = "<group>"; };
+		A8DF86A81DD4600F009B25AD /* NumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberButton.m; sourceTree = "<group>"; };
+		A8DF86AA1DD46B19009B25AD /* NSString+NumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NumberButton.h"; sourceTree = "<group>"; };
+		A8DF86AB1DD46B19009B25AD /* NSString+NumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NumberButton.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8DF86781DD423FB009B25AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8DF86721DD423FB009B25AD = {
+			isa = PBXGroup;
+			children = (
+				A8DF867D1DD423FB009B25AD /* UIButton */,
+				A8DF867C1DD423FB009B25AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8DF867C1DD423FB009B25AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF867B1DD423FB009B25AD /* UIButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8DF867D1DD423FB009B25AD /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF869B1DD44F8D009B25AD /* 1.png */,
+				A8DF869D1DD44F93009B25AD /* 2.png */,
+				A8DF86A61DD45EFE009B25AD /* 02 TimerButton */,
+				A8DF86A51DD45EC8009B25AD /* 03 NumberButton */,
+				A8DF86811DD423FB009B25AD /* AppDelegate.h */,
+				A8DF86821DD423FB009B25AD /* AppDelegate.m */,
+				A8DF86841DD423FB009B25AD /* ViewController.h */,
+				A8DF86851DD423FB009B25AD /* ViewController.m */,
+				A8DF86981DD42684009B25AD /* CustomButton.h */,
+				A8DF86991DD42684009B25AD /* CustomButton.m */,
+				A8DF86951DD425C3009B25AD /* CustomButtonViewController.h */,
+				A8DF86961DD425C3009B25AD /* CustomButtonViewController.m */,
+				A8DF868F1DD423FB009B25AD /* Info.plist */,
+				A8DF868C1DD423FB009B25AD /* LaunchScreen.storyboard */,
+				A8DF86871DD423FB009B25AD /* Main.storyboard */,
+				A8DF868A1DD423FB009B25AD /* Assets.xcassets */,
+				A8DF867E1DD423FB009B25AD /* Supporting Files */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		A8DF867E1DD423FB009B25AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF867F1DD423FB009B25AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8DF86A51DD45EC8009B25AD /* 03 NumberButton */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF86A21DD45DA4009B25AD /* NumberButtonViewController.h */,
+				A8DF86A31DD45DA4009B25AD /* NumberButtonViewController.m */,
+				A8DF86A71DD4600F009B25AD /* NumberButton.h */,
+				A8DF86A81DD4600F009B25AD /* NumberButton.m */,
+				A8DF86AA1DD46B19009B25AD /* NSString+NumberButton.h */,
+				A8DF86AB1DD46B19009B25AD /* NSString+NumberButton.m */,
+			);
+			name = "03 NumberButton";
+			sourceTree = "<group>";
+		};
+		A8DF86A61DD45EFE009B25AD /* 02 TimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				A8DF869F1DD4559E009B25AD /* TimerButtonViewController.h */,
+				A8DF86A01DD4559E009B25AD /* TimerButtonViewController.m */,
+			);
+			name = "02 TimerButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8DF867A1DD423FB009B25AD /* UIButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8DF86921DD423FB009B25AD /* Build configuration list for PBXNativeTarget "UIButton" */;
+			buildPhases = (
+				A8DF86771DD423FB009B25AD /* Sources */,
+				A8DF86781DD423FB009B25AD /* Frameworks */,
+				A8DF86791DD423FB009B25AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIButton;
+			productName = UIButton;
+			productReference = A8DF867B1DD423FB009B25AD /* UIButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8DF86731DD423FB009B25AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Meng Fan";
+				TargetAttributes = {
+					A8DF867A1DD423FB009B25AD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A8DF86761DD423FB009B25AD /* Build configuration list for PBXProject "UIButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8DF86721DD423FB009B25AD;
+			productRefGroup = A8DF867C1DD423FB009B25AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8DF867A1DD423FB009B25AD /* UIButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8DF86791DD423FB009B25AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DF868E1DD423FB009B25AD /* LaunchScreen.storyboard in Resources */,
+				A8DF869C1DD44F8D009B25AD /* 1.png in Resources */,
+				A8DF869E1DD44F93009B25AD /* 2.png in Resources */,
+				A8DF868B1DD423FB009B25AD /* Assets.xcassets in Resources */,
+				A8DF86891DD423FB009B25AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8DF86771DD423FB009B25AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DF86A41DD45DA4009B25AD /* NumberButtonViewController.m in Sources */,
+				A8DF86A11DD4559E009B25AD /* TimerButtonViewController.m in Sources */,
+				A8DF86AC1DD46B19009B25AD /* NSString+NumberButton.m in Sources */,
+				A8DF86861DD423FB009B25AD /* ViewController.m in Sources */,
+				A8DF869A1DD42684009B25AD /* CustomButton.m in Sources */,
+				A8DF86971DD425C3009B25AD /* CustomButtonViewController.m in Sources */,
+				A8DF86831DD423FB009B25AD /* AppDelegate.m in Sources */,
+				A8DF86A91DD4600F009B25AD /* NumberButton.m in Sources */,
+				A8DF86801DD423FB009B25AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8DF86871DD423FB009B25AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DF86881DD423FB009B25AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8DF868C1DD423FB009B25AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8DF868D1DD423FB009B25AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8DF86901DD423FB009B25AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8DF86911DD423FB009B25AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8DF86931DD423FB009B25AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dk.UIButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A8DF86941DD423FB009B25AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dk.UIButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8DF86761DD423FB009B25AD /* Build configuration list for PBXProject "UIButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DF86901DD423FB009B25AD /* Debug */,
+				A8DF86911DD423FB009B25AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8DF86921DD423FB009B25AD /* Build configuration list for PBXNativeTarget "UIButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8DF86931DD423FB009B25AD /* Debug */,
+				A8DF86941DD423FB009B25AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8DF86731DD423FB009B25AD /* Project object */;
+}
