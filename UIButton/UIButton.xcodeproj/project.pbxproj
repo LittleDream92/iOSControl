@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A879BEE81DD961C4005020FA /* ClickMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A879BEE71DD961C4005020FA /* ClickMoreViewController.m */; };
 		A8DF86801DD423FB009B25AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF867F1DD423FB009B25AD /* main.m */; };
 		A8DF86831DD423FB009B25AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86821DD423FB009B25AD /* AppDelegate.m */; };
 		A8DF86861DD423FB009B25AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DF86851DD423FB009B25AD /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A879BEE61DD961C4005020FA /* ClickMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickMoreViewController.h; sourceTree = "<group>"; };
+		A879BEE71DD961C4005020FA /* ClickMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickMoreViewController.m; sourceTree = "<group>"; };
 		A8DF867B1DD423FB009B25AD /* UIButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DF867F1DD423FB009B25AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8DF86811DD423FB009B25AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A879BEE51DD95ED5005020FA /* 04 ClickMore */ = {
+			isa = PBXGroup;
+			children = (
+				A879BEE61DD961C4005020FA /* ClickMoreViewController.h */,
+				A879BEE71DD961C4005020FA /* ClickMoreViewController.m */,
+			);
+			name = "04 ClickMore";
+			sourceTree = "<group>";
+		};
 		A8DF86721DD423FB009B25AD = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 				A8DF869D1DD44F93009B25AD /* 2.png */,
 				A8DF86A61DD45EFE009B25AD /* 02 TimerButton */,
 				A8DF86A51DD45EC8009B25AD /* 03 NumberButton */,
+				A879BEE51DD95ED5005020FA /* 04 ClickMore */,
 				A8DF86811DD423FB009B25AD /* AppDelegate.h */,
 				A8DF86821DD423FB009B25AD /* AppDelegate.m */,
 				A8DF86841DD423FB009B25AD /* ViewController.h */,
@@ -208,6 +221,7 @@
 				A8DF86A11DD4559E009B25AD /* TimerButtonViewController.m in Sources */,
 				A8DF86AC1DD46B19009B25AD /* NSString+NumberButton.m in Sources */,
 				A8DF86861DD423FB009B25AD /* ViewController.m in Sources */,
+				A879BEE81DD961C4005020FA /* ClickMoreViewController.m in Sources */,
 				A8DF869A1DD42684009B25AD /* CustomButton.m in Sources */,
 				A8DF86971DD425C3009B25AD /* CustomButtonViewController.m in Sources */,
 				A8DF86831DD423FB009B25AD /* AppDelegate.m in Sources */,
@@ -369,6 +383,7 @@
 				A8DF86941DD423FB009B25AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

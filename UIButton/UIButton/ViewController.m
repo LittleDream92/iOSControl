@@ -10,6 +10,7 @@
 #import "CustomButtonViewController.h"
 #import "TimerButtonViewController.h"
 #import "NumberButtonViewController.h"
+#import "ClickMoreViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titleArray = @[@"调整button内部控件位置", @"button倒计时", @"仿京东购物车加减按钮"];
+    self.titleArray = @[@"调整button内部控件位置", @"button倒计时", @"仿京东购物车加减按钮", @"折叠点击现实更多"];
     
     [self setUpViews];
 }
@@ -93,6 +94,8 @@
         }
         case 3:
         {
+            ClickMoreViewController *vc = [[ClickMoreViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:
