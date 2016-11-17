@@ -54,15 +54,14 @@
     [self.label setUnderLineWithText:@"比如考完4级那么就" color:[UIColor redColor]];
     
     //设置行距
-    [self.label changeLabelSpaceWithSpace:20 text:self.label.text];
+    [self.label changeLabelSpaceWithSpace:15 text:self.label.text];
     [self.label sizeToFit];
-
 }
 
 #pragma mark - lazyloading
 -(UILabel *)label {
     if (!_label) {
-        _label = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 300, 200)];
+        _label = [[UILabel alloc] initWithFrame:CGRectMake(20, 75, self.view.bounds.size.width-40, 200)];
         
         _label.backgroundColor = [UIColor cyanColor];
         

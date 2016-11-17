@@ -138,7 +138,7 @@
         _labelS.backgroundColor = [UIColor yellowColor];
         _labelS.font = [UIFont fontWithName:@"GillSans-Light" size:14];
         _labelS.numberOfLines = 0;
-        _labelS.text = @"我慢慢地了解到，所谓父女母子一场，只不过意味着，你和他的缘分就是今生今世不断地在目送他的背影渐行渐远。你站立在小路的这一端，看着他逐渐消失在小路转弯的地方，而且，他用背影默默告诉你：不必追。";
+        _labelS.text = @"我是不固定尺寸计算size的效果一般就算设置多行也无用，因为宽度无限大，so适用于单行文本";
     }
     return _labelS;
 }
