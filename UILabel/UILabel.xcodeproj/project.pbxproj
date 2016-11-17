@@ -103,18 +103,12 @@
 				887796911B9AE66300843E5C /* AppDelegate.m */,
 				887796931B9AE66300843E5C /* ViewController.h */,
 				887796941B9AE66300843E5C /* ViewController.m */,
-				A802AB7B1DD2C3FC0008B658 /* LabelFontViewController.h */,
-				A802AB7C1DD2C3FC0008B658 /* LabelFontViewController.m */,
-				A802AB7E1DD2C8EA0008B658 /* LabelLineViewController.h */,
-				A802AB7F1DD2C8EA0008B658 /* LabelLineViewController.m */,
-				A802AB811DD2CDCA0008B658 /* TextColorsViewController.h */,
-				A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */,
-				A8B3BB6A1DD30EFE007F2481 /* TextFontViewController.h */,
-				A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */,
-				A802AB841DD2F88F0008B658 /* TotalViewController.h */,
-				A802AB851DD2F88F0008B658 /* TotalViewController.m */,
-				A802AB871DD2F9420008B658 /* UILabel+LabelExtension.h */,
-				A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */,
+				A80DD9C61DDD632300CC3D85 /* 0 行距和字体 */,
+				A80DD9C71DDD634B00CC3D85 /* 1 获取宽高size */,
+				A80DD9C91DDD639400CC3D85 /* 2 字体中划线 */,
+				A80DD9C81DDD636A00CC3D85 /* 3 字体多颜色 */,
+				A80DD9CA1DDD63C400CC3D85 /* 4 字体多大小 */,
+				A80DD9CB1DDD63E000CC3D85 /* 5 类目总结 */,
 				887796961B9AE66300843E5C /* Main.storyboard */,
 				887796991B9AE66300843E5C /* Images.xcassets */,
 				8877969B1B9AE66300843E5C /* LaunchScreen.xib */,
@@ -147,6 +141,60 @@
 				887796A71B9AE66300843E5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A80DD9C61DDD632300CC3D85 /* 0 行距和字体 */ = {
+			isa = PBXGroup;
+			children = (
+				A802AB7B1DD2C3FC0008B658 /* LabelFontViewController.h */,
+				A802AB7C1DD2C3FC0008B658 /* LabelFontViewController.m */,
+			);
+			name = "0 行距和字体";
+			sourceTree = "<group>";
+		};
+		A80DD9C71DDD634B00CC3D85 /* 1 获取宽高size */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "1 获取宽高size";
+			sourceTree = "<group>";
+		};
+		A80DD9C81DDD636A00CC3D85 /* 3 字体多颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				A802AB811DD2CDCA0008B658 /* TextColorsViewController.h */,
+				A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */,
+			);
+			name = "3 字体多颜色";
+			sourceTree = "<group>";
+		};
+		A80DD9C91DDD639400CC3D85 /* 2 字体中划线 */ = {
+			isa = PBXGroup;
+			children = (
+				A802AB7E1DD2C8EA0008B658 /* LabelLineViewController.h */,
+				A802AB7F1DD2C8EA0008B658 /* LabelLineViewController.m */,
+			);
+			name = "2 字体中划线";
+			sourceTree = "<group>";
+		};
+		A80DD9CA1DDD63C400CC3D85 /* 4 字体多大小 */ = {
+			isa = PBXGroup;
+			children = (
+				A8B3BB6A1DD30EFE007F2481 /* TextFontViewController.h */,
+				A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */,
+			);
+			name = "4 字体多大小";
+			sourceTree = "<group>";
+		};
+		A80DD9CB1DDD63E000CC3D85 /* 5 类目总结 */ = {
+			isa = PBXGroup;
+			children = (
+				A802AB841DD2F88F0008B658 /* TotalViewController.h */,
+				A802AB851DD2F88F0008B658 /* TotalViewController.m */,
+				A802AB871DD2F9420008B658 /* UILabel+LabelExtension.h */,
+				A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */,
+			);
+			name = "5 类目总结";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

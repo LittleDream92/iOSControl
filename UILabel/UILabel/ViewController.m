@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.titleArray = @[@"Lable 行距和字体", @"Label 中划线／下划线", @"label多种字体颜色", @"label多种字体大小", @"类目综合"];
+    self.titleArray = @[@"Lable 行距和字体", @"获取label字体的宽度或者高度", @"Label 中划线／下划线", @"label多种字体颜色", @"label多种字体大小", @"类目综合"];
     [self setUpViews];
 }
 
@@ -83,23 +83,27 @@
         }
         case 1:
         {
-            LabelLineViewController *vc = [[LabelLineViewController alloc] init];
-            [self.navigationController showViewController:vc sender:self];
             break;
         }
         case 2:
         {
-            TextColorsViewController *vc = [[TextColorsViewController alloc] init];
+            LabelLineViewController *vc = [[LabelLineViewController alloc] init];
             [self.navigationController showViewController:vc sender:self];
             break;
         }
         case 3:
         {
-            TextFontViewController *vc = [[TextFontViewController alloc] init];
+            TextColorsViewController *vc = [[TextColorsViewController alloc] init];
             [self.navigationController showViewController:vc sender:self];
             break;
         }
         case 4:
+        {
+            TextFontViewController *vc = [[TextFontViewController alloc] init];
+            [self.navigationController showViewController:vc sender:self];
+            break;
+        }
+        case 5:
         {
             TotalViewController *vc = [[TotalViewController alloc] init];
             [self.navigationController showViewController:vc sender:self];
