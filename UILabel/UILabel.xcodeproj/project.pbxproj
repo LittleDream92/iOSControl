@@ -19,6 +19,7 @@
 		A802AB831DD2CDCA0008B658 /* TextColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */; };
 		A802AB861DD2F88F0008B658 /* TotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB851DD2F88F0008B658 /* TotalViewController.m */; };
 		A802AB891DD2F9420008B658 /* UILabel+LabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */; };
+		A80DD9CE1DDD82DB00CC3D85 /* TextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */; };
 		A8B3BB6C1DD30EFE007F2481 /* TextFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		A802AB851DD2F88F0008B658 /* TotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalViewController.m; sourceTree = "<group>"; };
 		A802AB871DD2F9420008B658 /* UILabel+LabelExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelExtension.h"; sourceTree = "<group>"; };
 		A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelExtension.m"; sourceTree = "<group>"; };
+		A80DD9CC1DDD82DB00CC3D85 /* TextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeViewController.h; sourceTree = "<group>"; };
+		A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeViewController.m; sourceTree = "<group>"; };
 		A8B3BB6A1DD30EFE007F2481 /* TextFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFontViewController.h; sourceTree = "<group>"; };
 		A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFontViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 		A80DD9C71DDD634B00CC3D85 /* 1 获取宽高size */ = {
 			isa = PBXGroup;
 			children = (
+				A80DD9CC1DDD82DB00CC3D85 /* TextSizeViewController.h */,
+				A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */,
 			);
 			name = "1 获取宽高size";
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				A802AB801DD2C8EA0008B658 /* LabelLineViewController.m in Sources */,
 				887796921B9AE66300843E5C /* AppDelegate.m in Sources */,
 				A802AB831DD2CDCA0008B658 /* TextColorsViewController.m in Sources */,
+				A80DD9CE1DDD82DB00CC3D85 /* TextSizeViewController.m in Sources */,
 				A8B3BB6C1DD30EFE007F2481 /* TextFontViewController.m in Sources */,
 				A802AB7D1DD2C3FC0008B658 /* LabelFontViewController.m in Sources */,
 				8877968F1B9AE66300843E5C /* main.m in Sources */,

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "LabelFontViewController.h"
+#import "TextSizeViewController.h"
 #import "LabelLineViewController.h"
 #import "TextColorsViewController.h"
 #import "TextFontViewController.h"
@@ -83,6 +84,8 @@
         }
         case 1:
         {
+            TextSizeViewController *vc = [[TextSizeViewController alloc] init];
+            [self.navigationController showViewController:vc sender:self];
             break;
         }
         case 2:
