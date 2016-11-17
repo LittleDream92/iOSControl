@@ -74,4 +74,23 @@
  */
 - (void)changeLabelSpaceWithSpace:(NSInteger)space text:(NSString *)text;
 
+
+/**
+ *  固定宽度求高度
+ *  @param string   文本内容
+ *  @param width    固定的宽度
+ *  @param font     字体
+ */
+- (CGFloat)heightForString:(NSString *)string width:(CGFloat)width font:(UIFont *)font;
+
+
+/**
+ *  固定高度求宽度
+ *  @param string   文本内容
+ *  @param height   固定的高度
+ *  @param font     字体
+ */
+- (CGFloat)widthForString:(NSString *)string height:(CGFloat)height;
+
+
 @end

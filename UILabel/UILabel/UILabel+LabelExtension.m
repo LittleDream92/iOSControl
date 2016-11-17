@@ -129,4 +129,39 @@
     self.attributedText = textString;
 }
 
+
+/**
+ *  固定宽度求高度
+ *  @param string   文本内容
+ *  @param width    固定的宽度
+ *  @param font     字体
+ */
+- (CGFloat)heightForString:(NSString *)string width:(CGFloat)width font:(UIFont *)font {
+    
+    NSDictionary *attr = @{NSFontAttributeName: font};
+    CGSize sizeToFit = [string boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                           options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                        attributes:attr
+                                           context:nil].size;
+    //此处的换行类型（lineBreakMode）可根据自己的实际情况进行设置
+    return sizeToFit.width;
+}
+
+
+/**
+ *  固定高度求宽度
+ *  @param string   文本内容
+ *  @param height   固定的高度
+ *  @param font     字体
+ */
+- (CGFloat)widthForString:(NSString *)string height:(CGFloat)height font:(UIFont *)font {
+    NSDictionary *attr = @{NSFontAttributeName: font};
+    CGSize sizeToFit = [string boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+                                            options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                         attributes:attr
+                                            context:nil].size;
+    //此处的换行类型（lineBreakMode）可根据自己的实际情况进行设置
+    return sizeToFit.width;
+}
+
 @end
