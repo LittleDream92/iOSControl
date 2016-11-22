@@ -20,6 +20,9 @@
 		A802AB861DD2F88F0008B658 /* TotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB851DD2F88F0008B658 /* TotalViewController.m */; };
 		A802AB891DD2F9420008B658 /* UILabel+LabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */; };
 		A80DD9CE1DDD82DB00CC3D85 /* TextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */; };
+		A88BCA891DE2F74100953E52 /* WSShiningLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A88BCA881DE2F74100953E52 /* WSShiningLabel.m */; };
+		A88BCA8D1DE2FB6700953E52 /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88BCA8C1DE2FB6700953E52 /* TagViewController.m */; };
+		A88BCA931DE2FC7400953E52 /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = A88BCA921DE2FC7400953E52 /* TagView.m */; };
 		A8B3BB6C1DD30EFE007F2481 /* TextFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,12 @@
 		A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelExtension.m"; sourceTree = "<group>"; };
 		A80DD9CC1DDD82DB00CC3D85 /* TextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeViewController.h; sourceTree = "<group>"; };
 		A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeViewController.m; sourceTree = "<group>"; };
+		A88BCA871DE2F74100953E52 /* WSShiningLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSShiningLabel.h; sourceTree = "<group>"; };
+		A88BCA881DE2F74100953E52 /* WSShiningLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSShiningLabel.m; sourceTree = "<group>"; };
+		A88BCA8B1DE2FB6700953E52 /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
+		A88BCA8C1DE2FB6700953E52 /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
+		A88BCA911DE2FC7400953E52 /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
+		A88BCA921DE2FC7400953E52 /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
 		A8B3BB6A1DD30EFE007F2481 /* TextFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFontViewController.h; sourceTree = "<group>"; };
 		A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFontViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +121,7 @@
 				A80DD9C81DDD636A00CC3D85 /* 3 字体多颜色 */,
 				A80DD9CA1DDD63C400CC3D85 /* 4 字体多大小 */,
 				A80DD9CB1DDD63E000CC3D85 /* 5 类目总结 */,
+				A88BCA8A1DE2FB4400953E52 /* 6 标签 */,
 				887796961B9AE66300843E5C /* Main.storyboard */,
 				887796991B9AE66300843E5C /* Images.xcassets */,
 				8877969B1B9AE66300843E5C /* LaunchScreen.xib */,
@@ -169,6 +179,8 @@
 			children = (
 				A802AB811DD2CDCA0008B658 /* TextColorsViewController.h */,
 				A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */,
+				A88BCA871DE2F74100953E52 /* WSShiningLabel.h */,
+				A88BCA881DE2F74100953E52 /* WSShiningLabel.m */,
 			);
 			name = "3 字体多颜色";
 			sourceTree = "<group>";
@@ -200,6 +212,17 @@
 				A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */,
 			);
 			name = "5 类目总结";
+			sourceTree = "<group>";
+		};
+		A88BCA8A1DE2FB4400953E52 /* 6 标签 */ = {
+			isa = PBXGroup;
+			children = (
+				A88BCA8B1DE2FB6700953E52 /* TagViewController.h */,
+				A88BCA8C1DE2FB6700953E52 /* TagViewController.m */,
+				A88BCA911DE2FC7400953E52 /* TagView.h */,
+				A88BCA921DE2FC7400953E52 /* TagView.m */,
+			);
+			name = "6 标签";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +327,15 @@
 			files = (
 				A802AB861DD2F88F0008B658 /* TotalViewController.m in Sources */,
 				A802AB891DD2F9420008B658 /* UILabel+LabelExtension.m in Sources */,
+				A88BCA931DE2FC7400953E52 /* TagView.m in Sources */,
 				887796951B9AE66300843E5C /* ViewController.m in Sources */,
+				A88BCA891DE2F74100953E52 /* WSShiningLabel.m in Sources */,
 				A802AB801DD2C8EA0008B658 /* LabelLineViewController.m in Sources */,
 				887796921B9AE66300843E5C /* AppDelegate.m in Sources */,
 				A802AB831DD2CDCA0008B658 /* TextColorsViewController.m in Sources */,
 				A80DD9CE1DDD82DB00CC3D85 /* TextSizeViewController.m in Sources */,
 				A8B3BB6C1DD30EFE007F2481 /* TextFontViewController.m in Sources */,
+				A88BCA8D1DE2FB6700953E52 /* TagViewController.m in Sources */,
 				A802AB7D1DD2C3FC0008B658 /* LabelFontViewController.m in Sources */,
 				8877968F1B9AE66300843E5C /* main.m in Sources */,
 			);

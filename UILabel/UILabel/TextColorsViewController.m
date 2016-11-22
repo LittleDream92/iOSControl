@@ -7,6 +7,7 @@
 //
 
 #import "TextColorsViewController.h"
+#import "WSShiningLabel.h"
 
 @interface TextColorsViewController ()
 
@@ -15,13 +16,8 @@
 
 
 /** 闪烁 */
-@property (nonatomic, strong) UILabel *shimmerLabel1;
+@property (nonatomic, strong) WSShiningLabel *shimmerLabel1;
 
-@property (nonatomic, assign) BOOL isPlaying;   //正在播放
-@property (assign, nonatomic) CGSize charSize;  //文字size
-@property (nonatomic, assign) CATransform3D startT, endT;   //高亮移动范围[startT, endT]
-@property (nonatomic, strong) CABasicAnimation *translate;  //位移动画
-@property (nonatomic, strong) CABasicAnimation *alphaAni;   //alpha 动画
 
 @end
 
@@ -31,7 +27,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"字体多种颜色";
+    self.title = @"字体多种颜色及闪烁";
     
     [self example1];
     [self example2];
@@ -62,8 +58,12 @@
 - (void)example2 {
     [self.view addSubview:self.shimmerLabel1];
     
-    //开启闪烁
-//    [self.shimmerLabel1 ]
+//    self.shimmerLabel1.shimmerColor = [UIColor orangeColor];    //高亮颜色
+//    self.shimmerLabel1.shimmerType = ST_RightToLeft;    //滚动方向
+//    self.shimmerLabel1.durationTime = 2;                //滚动时间
+//    self.shimmerLabel1.shimmerWidth = 20;               //高亮的宽度
+//    self.shimmerLabel1.shimmerRadius = 20;              //阴影的宽度
+    [self.shimmerLabel1 startShimmer];                  //开启闪烁  
 }
 
 #pragma mark - lazylaoding
@@ -79,37 +79,15 @@
 }
 
 //闪烁的文字的label
--(UILabel *)shimmerLabel1 {
+-(WSShiningLabel *)shimmerLabel1 {
     if (!_shimmerLabel1) {
-        _shimmerLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(50, 200, 300, 30)];
+        _shimmerLabel1 = [[WSShiningLabel alloc] initWithFrame:CGRectMake(50, 200, 300, 30)];
         _shimmerLabel1.backgroundColor = [UIColor grayColor];
 //        _shimmerLabel1.numberOfLines = 0;
         _shimmerLabel1.text = @"我是会闪烁的文字，哈哈哈哈！";
     }
     return _shimmerLabel1;
 }
-
-
-#pragma mark - Shinning
-- (void)startShimmer {
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        
-        //切换到主线程串行队列，下面代码打包成一个事件（原子操作），加到runloop，就不用担心，isPlaying被多个线程同时修改
-        //dis_patch_async() 不strong持有本block，也不用担心循环引用
-        if (self.isPlaying) {
-            return ;
-        }
-        
-        self.isPlaying = true;
-        
-        
-    });
-}
-
-- (void)stopShimmer {
-    
-}
-
 
 
 @end

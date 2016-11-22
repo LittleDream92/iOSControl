@@ -90,7 +90,12 @@
  *  @param height   固定的高度
  *  @param font     字体
  */
-- (CGFloat)widthForString:(NSString *)string height:(CGFloat)height;
+- (CGFloat)widthForString:(NSString *)string height:(CGFloat)height font:(UIFont *)font;
+
+/**
+ *  设置多行文本两端对齐
+ */
+- (void)setLabelParagraphStyleJustifiedWithString:(NSString *)string;
 
 
 @end

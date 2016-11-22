@@ -164,4 +164,25 @@
     return sizeToFit.width;
 }
 
+
+/**
+ *  设置多行文本两端对齐
+ */
+- (void)setLabelParagraphStyleJustifiedWithString:(NSString *)string {
+    //获取label的带属性的字符串
+    NSMutableAttributedString *textString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
+    
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    style.alignment = NSTextAlignmentJustified;     // 对齐方式, 设置为两端对齐。
+    style.paragraphSpacing = 0;                     // 段落后的间距
+    style.paragraphSpacingBefore = 0;               // 段落前的间距
+    style.firstLineHeadIndent = 2.0;                  // 段落第一句缩进
+    style.headIndent = 0;                           // 头部缩进(不包括段落第一句)
+    
+    [textString setAttributes:@{NSParagraphStyleAttributeName : style} range:NSMakeRange(0, [string length])];
+    
+    self.attributedText = textString;
+}
+
+
 @end
