@@ -36,8 +36,14 @@
  -(CGRect)imageRectForContentRect:(CGRect)contentRect中重置image的位置，
  在
  -(CGRect)titleRectForContentRect:(CGRect)contentRect中重置标题的位置。
- 
- 
+ */
+
+/**
+     iOS中的事件分为三类：
+ （1）触摸事件：通过触摸，手势进行触发（如点击、缩放等）；
+ （2）加速计事件：通过加速器进行触发（如手机晃动）；
+ （3）远程控制事件：通过其他远程设备触发（如耳机控制按钮）；
+
  */
 
 #pragma mark - setUpViews
@@ -68,9 +74,11 @@
     
     button.frame = CGRectMake(0, 100, 100, 100);
     //设置背景颜色
-    button.backgroundColor = [UIColor brownColor];
+//    button.backgroundColor = [UIColor brownColor];
     
     [button setImage:[UIImage imageNamed:@"Image"] forState:UIControlStateNormal];
+//    [button setBackgroundImage:[UIImage imageNamed:@"Image"] forState:UIControlStateNormal];
+    
     button.titleLabel.numberOfLines = 0;
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
     [button setTitle:@"我是\n button" forState:UIControlStateNormal];
@@ -83,7 +91,7 @@
     
     
     //有时候我们要点击的button的范围／区域比我们想要显示出来的区域要大，此时怎么办呢,详细请参照button的分类
-    [button setEnlargeEdgeWithTop:20 right:20 bottom:20 left:20];
+    [button setEnlargeEdgeWithTop:20 right:0 bottom:0 left:0];
     
     //有时候我们需要设置button圆形(这种情况一般button是正方形的)
     button.layer.cornerRadius = button.frame.size.height/2;
