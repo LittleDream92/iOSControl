@@ -15,6 +15,7 @@
 #import "TextFontViewController.h"
 #import "TotalViewController.h"
 #import "TagViewController.h"
+#import "RichLabelViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -102,7 +103,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.titleArray = @[@"Lable 行距和字体", @"获取label字体的宽度或者高度", @"Label 中划线／下划线", @"label多种字体颜色及闪烁", @"label多种字体大小", @"总结——类目综合", @"选择标签"];
+    self.titleArray = @[@"Lable 行距和字体", @"获取label字体的宽度或者高度", @"Label 中划线／下划线", @"label多种字体颜色及闪烁", @"label多种字体大小", @"总结——类目综合", @"选择标签", @"图文混排"];
     [self setUpViews];
 }
 
@@ -190,6 +191,12 @@
         case 6:
         {
             TagViewController *vc = [[TagViewController alloc] init];
+            [self.navigationController showViewController:vc sender:self];
+            break;
+        }
+        case 7:
+        {
+            RichLabelViewController *vc = [[RichLabelViewController alloc] init];
             [self.navigationController showViewController:vc sender:self];
             break;
         }

@@ -11,9 +11,7 @@
 @interface TextFontViewController ()
 
 @property (nonatomic, strong) UILabel *label;
-
-@property (nonatomic, strong) UILabel *label1;
-@property (nonatomic, strong) UILabel *label2;
+@property (nonatomic, strong) UILabel *verticalLabel;
 
 @end
 
@@ -54,25 +52,10 @@
     [self.label sizeToFit];
 }
 
-//两端对齐
+//竖排label
 - (void)example2 {
-    [self.view addSubview:self.label1];
-    [self.view addSubview:self.label2];
-    
-    //label2设置两端对齐
-    NSMutableAttributedString *changeColorString1 =[[NSMutableAttributedString alloc]initWithString:self.label2.text];
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    style.alignment = NSTextAlignmentJustified;     // 对齐方式, 设置为两端对齐。
-    style.paragraphSpacing = 0;                     // 段落后的间距
-    style.paragraphSpacingBefore = 0;               // 段落前的间距
-    style.firstLineHeadIndent = 0;                  // 段落第一句缩进
-    style.headIndent = 0;                           // 头部缩进(不包括段落第一句)
-    
-    [changeColorString1 setAttributes:@{NSParagraphStyleAttributeName : style} range:NSMakeRange(0, self.label2.text.length)];
-    
-    self.label2.attributedText=changeColorString1;
+    [self.view addSubview:self.verticalLabel];
 }
-
 
 #pragma mark - lazylaoding
 -(UILabel *)label {
@@ -85,27 +68,16 @@
     return _label;
 }
 
--(UILabel *)label1 {
-    if (!_label1) {
-        _label1 = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 300, 100)];
-        _label1.numberOfLines = 0;
-        _label1.backgroundColor = [UIColor cyanColor];
-        _label1.text = @"信息时代，每天，我们都会被淹没在大数据的海洋里，不知从什么时候开始，集中注意力也变成一件困难的事了。注意力分散对每一个要想有所专长的人来说，无疑是致命的。尤其对于学生来讲，我们每天都会被大量的信息流所左右，那如何有效的集中自己的注意力，让每一天更有效率呢？今天就给大家分享6个实用的小妙招！";
-        [_label1 sizeToFit];
-    }
-    return _label1;
-}
 
--(UILabel *)label2 {
-    if (!_label2) {
-        _label2 = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 300, 100)];
-        _label2.numberOfLines = 0;
-        _label2.backgroundColor = [UIColor cyanColor];
-        _label2.text = @"信息时代，每天，我们都会被淹没在大数据的海洋里，不知从什么时候开始，集中注意力也变成一件困难的事了。注意力分散对每一个要想有所专长的人来说，无疑是致命的。尤其对于学生来讲，我们每天都会被大量的信息流所左右，那如何有效的集中自己的注意力，让每一天更有效率呢？今天就给大家分享6个实用的小妙招！";
-        [_label2 sizeToFit];
+-(UILabel *)verticalLabel {
+    if (!_verticalLabel) {
+        _verticalLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 50, 300)];
+        _verticalLabel.backgroundColor = [UIColor cyanColor];
+        _verticalLabel.numberOfLines = 0;
+        _verticalLabel.text = @"我\n是\n竖\n排\n显\n示\n的\nlabel\n，\n哈\n哈\n哈\n哈\n！";
+        [_verticalLabel sizeToFit];
     }
-    return _label2;
+    return _verticalLabel;
 }
-
 
 @end
