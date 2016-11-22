@@ -7,6 +7,7 @@
 //
 
 #import "TextFontViewController.h"
+#import "UILabel+NSMutableAttributedString.h"
 
 @interface TextFontViewController ()
 
@@ -71,7 +72,7 @@
 
 -(UILabel *)verticalLabel {
     if (!_verticalLabel) {
-        _verticalLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 50, 300)];
+        _verticalLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 200, 300)];
         _verticalLabel.backgroundColor = [UIColor cyanColor];
         _verticalLabel.numberOfLines = 0;
         _verticalLabel.text = @"我\n是\n竖\n排\n显\n示\n的\nlabel\n，\n哈\n哈\n哈\n哈\n！";

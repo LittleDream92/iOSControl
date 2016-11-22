@@ -40,6 +40,7 @@
     [attStr1 addAttribute:NSParagraphStyleAttributeName value:paraStyle range:NSMakeRange(0, [textString length])];
     [attStr1 addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(0, [textString length])];
     [self.label setAttributedText:attStr1];
+    
     [self.label sizeToFit];
 }
 
@@ -48,7 +49,6 @@
     if (!_label) {
         _label = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, [UIScreen mainScreen].bounds.size.width-100, 200)];
         _label.backgroundColor = [UIColor cyanColor];
-        
         _label.numberOfLines = 0;
     }
     return _label;

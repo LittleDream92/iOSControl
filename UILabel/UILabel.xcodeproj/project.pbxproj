@@ -18,7 +18,6 @@
 		A802AB801DD2C8EA0008B658 /* LabelLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB7F1DD2C8EA0008B658 /* LabelLineViewController.m */; };
 		A802AB831DD2CDCA0008B658 /* TextColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */; };
 		A802AB861DD2F88F0008B658 /* TotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB851DD2F88F0008B658 /* TotalViewController.m */; };
-		A802AB891DD2F9420008B658 /* UILabel+LabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */; };
 		A80DD9CE1DDD82DB00CC3D85 /* TextSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */; };
 		A88BCA891DE2F74100953E52 /* WSShiningLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A88BCA881DE2F74100953E52 /* WSShiningLabel.m */; };
 		A88BCA8D1DE2FB6700953E52 /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88BCA8C1DE2FB6700953E52 /* TagViewController.m */; };
@@ -67,6 +66,7 @@
 		A89C24441DE3F6B500FAB663 /* Small019@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A89C241A1DE3F6B500FAB663 /* Small019@2x.png */; };
 		A89C24451DE3F6B500FAB663 /* Small020.png in Resources */ = {isa = PBXBuildFile; fileRef = A89C241B1DE3F6B500FAB663 /* Small020.png */; };
 		A89C24461DE3F6B500FAB663 /* Small020@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A89C241C1DE3F6B500FAB663 /* Small020@2x.png */; };
+		A89C244C1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = A89C244B1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.m */; };
 		A8B3BB6C1DD30EFE007F2481 /* TextFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -102,8 +102,6 @@
 		A802AB821DD2CDCA0008B658 /* TextColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextColorsViewController.m; sourceTree = "<group>"; };
 		A802AB841DD2F88F0008B658 /* TotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalViewController.h; sourceTree = "<group>"; };
 		A802AB851DD2F88F0008B658 /* TotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalViewController.m; sourceTree = "<group>"; };
-		A802AB871DD2F9420008B658 /* UILabel+LabelExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelExtension.h"; sourceTree = "<group>"; };
-		A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelExtension.m"; sourceTree = "<group>"; };
 		A80DD9CC1DDD82DB00CC3D85 /* TextSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeViewController.h; sourceTree = "<group>"; };
 		A80DD9CD1DDD82DB00CC3D85 /* TextSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeViewController.m; sourceTree = "<group>"; };
 		A88BCA871DE2F74100953E52 /* WSShiningLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSShiningLabel.h; sourceTree = "<group>"; };
@@ -160,6 +158,8 @@
 		A89C241A1DE3F6B500FAB663 /* Small019@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Small019@2x.png"; sourceTree = "<group>"; };
 		A89C241B1DE3F6B500FAB663 /* Small020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Small020.png; sourceTree = "<group>"; };
 		A89C241C1DE3F6B500FAB663 /* Small020@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Small020@2x.png"; sourceTree = "<group>"; };
+		A89C244A1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+NSMutableAttributedString.h"; sourceTree = "<group>"; };
+		A89C244B1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+NSMutableAttributedString.m"; sourceTree = "<group>"; };
 		A8B3BB6A1DD30EFE007F2481 /* TextFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFontViewController.h; sourceTree = "<group>"; };
 		A8B3BB6B1DD30EFE007F2481 /* TextFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFontViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,8 +301,8 @@
 			children = (
 				A802AB841DD2F88F0008B658 /* TotalViewController.h */,
 				A802AB851DD2F88F0008B658 /* TotalViewController.m */,
-				A802AB871DD2F9420008B658 /* UILabel+LabelExtension.h */,
-				A802AB881DD2F9420008B658 /* UILabel+LabelExtension.m */,
+				A89C244A1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.h */,
+				A89C244B1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.m */,
 			);
 			name = "5 类目总结";
 			sourceTree = "<group>";
@@ -541,8 +541,8 @@
 				A802AB861DD2F88F0008B658 /* TotalViewController.m in Sources */,
 				A89C241E1DE3F6B500FAB663 /* NSString+FindFace.m in Sources */,
 				A89C23EA1DE3F05200FAB663 /* RichLabelViewController.m in Sources */,
-				A802AB891DD2F9420008B658 /* UILabel+LabelExtension.m in Sources */,
 				A88BCA931DE2FC7400953E52 /* TagView.m in Sources */,
+				A89C244C1DE42AFC00FAB663 /* UILabel+NSMutableAttributedString.m in Sources */,
 				887796951B9AE66300843E5C /* ViewController.m in Sources */,
 				A88BCA891DE2F74100953E52 /* WSShiningLabel.m in Sources */,
 				A802AB801DD2C8EA0008B658 /* LabelLineViewController.m in Sources */,

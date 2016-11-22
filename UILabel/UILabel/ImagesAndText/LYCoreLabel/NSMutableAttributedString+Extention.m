@@ -71,7 +71,9 @@
             
             NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
             attachment.image = [UIImage imageNamed:[FaceDict objectForKey:item]];
-            attachment.bounds = CGRectMake(0, 0, 15, 15);
+            
+        //在这可以修改图片的尺寸
+            attachment.bounds = CGRectMake(0, 0, 20, 20);
             
             NSAttributedString *attStr = [NSAttributedString attributedStringWithAttachment:attachment];
             
