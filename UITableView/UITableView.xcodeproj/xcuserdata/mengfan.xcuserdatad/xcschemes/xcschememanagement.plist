@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UIButton.xcscheme</key>
+		<key>UITableView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A8C6EA751DE52EE400B81959</key>
+		<key>A8C34E841DE7E34D00BFC4F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

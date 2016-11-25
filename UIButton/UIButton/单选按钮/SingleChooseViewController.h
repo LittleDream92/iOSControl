@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SingleChooseViewController.h
 //  UIButton
 //
 //  Created by Meng Fan on 16/11/23.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface SingleChooseViewController : UIViewController
 
 @end
-

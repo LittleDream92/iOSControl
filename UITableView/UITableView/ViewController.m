@@ -1,20 +1,21 @@
 //
 //  ViewController.m
-//  UIButton
+//  UITableView
 //
-//  Created by Meng Fan on 16/11/23.
+//  Created by Meng Fan on 16/11/25.
 //  Copyright © 2016年 Meng Fan. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "SingleChooseViewController.h"
-#import "TimerButtonViewController.h"
-#import "SegmentControlViewController.h"
+
+#import "SwipCellViewController.h"
+#import "HeaderStrechViewController.h"
+#import "TableViewListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -23,19 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = @[@"单选按钮", @"倒计时", @"自定义SegmentControl"];
-    
+    [self setUpViews];
+}
+
+#pragma mark - setUpViews
+- (void)setUpViews {
     [self.view addSubview:self.tableView];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - lazyloading
+#pragma mark - lazyLoading
 -(UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -48,24 +45,34 @@
     return _tableView;
 }
 
+-(NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+        
+        NSArray *arr = @[@"仿微信cell左滑菜单按钮", @"个人中心头像拉伸动画", @"仿QQ列表展开收起"];
+        [_dataArray addObjectsFromArray:arr];
+    }
+    return _dataArray;
+}
+
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataArray count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
     }
- 
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = self.dataArray[indexPath.row];
     
     return cell;
 }
-
 
 #pragma mark - UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,28 +81,35 @@
     switch (indexPath.row) {
         case 0:
         {
-            SingleChooseViewController *vc = [[SingleChooseViewController alloc] init];
-            vc.title = self.dataArray[0];
-            [self.navigationController showViewController:vc sender:self];
+            SwipCellViewController *vc = [[SwipCellViewController alloc] init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 1:
         {
-            TimerButtonViewController *vc = [[TimerButtonViewController alloc] init];
-            vc.title = self.dataArray[1];
-            [self.navigationController showViewController:vc sender:self];
+            HeaderStrechViewController *vc = [[HeaderStrechViewController alloc] init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 2:
         {
-            SegmentControlViewController *vc = [[SegmentControlViewController alloc] init];
-            vc.title = self.dataArray[2];
-            [self.navigationController showViewController:vc sender:self];
+            TableViewListViewController *vc = [[TableViewListViewController alloc] init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:
             break;
     }
+}
+
+
+#pragma mark -
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 

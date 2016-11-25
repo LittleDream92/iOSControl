@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8C6EA751DE52EE400B81959"
-               BuildableName = "UIButton.app"
-               BlueprintName = "UIButton"
-               ReferencedContainer = "container:UIButton.xcodeproj">
+               BlueprintIdentifier = "A8C34E841DE7E34D00BFC4F5"
+               BuildableName = "UITableView.app"
+               BlueprintName = "UITableView"
+               ReferencedContainer = "container:UITableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8C6EA751DE52EE400B81959"
-            BuildableName = "UIButton.app"
-            BlueprintName = "UIButton"
-            ReferencedContainer = "container:UIButton.xcodeproj">
+            BlueprintIdentifier = "A8C34E841DE7E34D00BFC4F5"
+            BuildableName = "UITableView.app"
+            BlueprintName = "UITableView"
+            ReferencedContainer = "container:UITableView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8C6EA751DE52EE400B81959"
-            BuildableName = "UIButton.app"
-            BlueprintName = "UIButton"
-            ReferencedContainer = "container:UIButton.xcodeproj">
+            BlueprintIdentifier = "A8C34E841DE7E34D00BFC4F5"
+            BuildableName = "UITableView.app"
+            BlueprintName = "UITableView"
+            ReferencedContainer = "container:UITableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8C6EA751DE52EE400B81959"
-            BuildableName = "UIButton.app"
-            BlueprintName = "UIButton"
-            ReferencedContainer = "container:UIButton.xcodeproj">
+            BlueprintIdentifier = "A8C34E841DE7E34D00BFC4F5"
+            BuildableName = "UITableView.app"
+            BlueprintName = "UITableView"
+            ReferencedContainer = "container:UITableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
