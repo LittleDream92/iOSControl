@@ -20,6 +20,11 @@
 		A8C34EB51DE813B500BFC4F5 /* HeaderStrechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34EB41DE813B500BFC4F5 /* HeaderStrechViewController.m */; };
 		A8C34EBC1DE82A4200BFC4F5 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34EBB1DE82A4200BFC4F5 /* MyModel.m */; };
 		A8C34EBF1DE82A5F00BFC4F5 /* TableViewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34EBE1DE82A5F00BFC4F5 /* TableViewListViewController.m */; };
+		A8FA1DB31DEC28980008C1CB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA1DB21DEC28980008C1CB /* MenuViewController.m */; };
+		A8FA1DBB1DEC28B40008C1CB /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA1DB61DEC28B40008C1CB /* MenuModel.m */; };
+		A8FA1DBC1DEC28B40008C1CB /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA1DB81DEC28B40008C1CB /* MenuTableViewCell.m */; };
+		A8FA1DBD1DEC28B40008C1CB /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA1DBA1DEC28B40008C1CB /* MenuView.m */; };
+		A8FA1DC01DEC28FD0008C1CB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FA1DBF1DEC28FD0008C1CB /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,16 @@
 		A8C34EBB1DE82A4200BFC4F5 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 		A8C34EBD1DE82A5F00BFC4F5 /* TableViewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewListViewController.h; sourceTree = "<group>"; };
 		A8C34EBE1DE82A5F00BFC4F5 /* TableViewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewListViewController.m; sourceTree = "<group>"; };
+		A8FA1DB11DEC28980008C1CB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		A8FA1DB21DEC28980008C1CB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		A8FA1DB51DEC28B40008C1CB /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		A8FA1DB61DEC28B40008C1CB /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		A8FA1DB71DEC28B40008C1CB /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		A8FA1DB81DEC28B40008C1CB /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		A8FA1DB91DEC28B40008C1CB /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		A8FA1DBA1DEC28B40008C1CB /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		A8FA1DBE1DEC28FD0008C1CB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A8FA1DBF1DEC28FD0008C1CB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +99,7 @@
 				A8C34E9F1DE7E47F00BFC4F5 /* 1 仿微信左滑多菜单 */,
 				A8C34EAB1DE8139100BFC4F5 /* 2 个人中心头像拉伸 */,
 				A8C34EB91DE8299300BFC4F5 /* 3 仿QQ列表展开收起 */,
+				A8FA1DB01DEC28870008C1CB /* 4 仿QQ动态菜单 */,
 				A8C34E911DE7E34D00BFC4F5 /* Main.storyboard */,
 				A8C34E941DE7E34D00BFC4F5 /* Assets.xcassets */,
 				A8C34E961DE7E34D00BFC4F5 /* LaunchScreen.storyboard */,
@@ -132,6 +148,31 @@
 				A8C34EBB1DE82A4200BFC4F5 /* MyModel.m */,
 			);
 			path = "3 仿QQ列表展开收起";
+			sourceTree = "<group>";
+		};
+		A8FA1DB01DEC28870008C1CB /* 4 仿QQ动态菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA1DB11DEC28980008C1CB /* MenuViewController.h */,
+				A8FA1DB21DEC28980008C1CB /* MenuViewController.m */,
+				A8FA1DBE1DEC28FD0008C1CB /* SecondViewController.h */,
+				A8FA1DBF1DEC28FD0008C1CB /* SecondViewController.m */,
+				A8FA1DB41DEC28B40008C1CB /* menu */,
+			);
+			path = "4 仿QQ动态菜单";
+			sourceTree = "<group>";
+		};
+		A8FA1DB41DEC28B40008C1CB /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				A8FA1DB51DEC28B40008C1CB /* MenuModel.h */,
+				A8FA1DB61DEC28B40008C1CB /* MenuModel.m */,
+				A8FA1DB71DEC28B40008C1CB /* MenuTableViewCell.h */,
+				A8FA1DB81DEC28B40008C1CB /* MenuTableViewCell.m */,
+				A8FA1DB91DEC28B40008C1CB /* MenuView.h */,
+				A8FA1DBA1DEC28B40008C1CB /* MenuView.m */,
+			);
+			path = menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,10 +249,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C34E901DE7E34D00BFC4F5 /* ViewController.m in Sources */,
+				A8FA1DC01DEC28FD0008C1CB /* SecondViewController.m in Sources */,
+				A8FA1DB31DEC28980008C1CB /* MenuViewController.m in Sources */,
+				A8FA1DBB1DEC28B40008C1CB /* MenuModel.m in Sources */,
 				A8C34EBC1DE82A4200BFC4F5 /* MyModel.m in Sources */,
 				A8C34EB01DE8139D00BFC4F5 /* HFStretchableTableHeaderView.m in Sources */,
+				A8FA1DBD1DEC28B40008C1CB /* MenuView.m in Sources */,
 				A8C34EA21DE7E4BC00BFC4F5 /* SwipCellViewController.m in Sources */,
 				A8C34E8D1DE7E34D00BFC4F5 /* AppDelegate.m in Sources */,
+				A8FA1DBC1DEC28B40008C1CB /* MenuTableViewCell.m in Sources */,
 				A8C34EB51DE813B500BFC4F5 /* HeaderStrechViewController.m in Sources */,
 				A8C34EBF1DE82A5F00BFC4F5 /* TableViewListViewController.m in Sources */,
 				A8C34E8A1DE7E34D00BFC4F5 /* main.m in Sources */,

@@ -32,6 +32,14 @@
     [self setUpViews];
 }
 
+/**
+ *  iOS 相册支持保存GIF和APNG动图，只是不能直接播放。
+ 
+ 图片有3种常见的编码方式：
+    第一种：baseline，逐行扫描，默认情况下JPEG、PNG、GIF都是这种保存方式
+    第二种：interlaced，隔行扫描，PNG和GIF在保存时可以选择这种方式
+ */
+
 
 #pragma mark - setUpViews
 - (void)setUpViews {
@@ -46,6 +54,7 @@
         _tableview.delegate = self;
         _tableview.dataSource = self;
         
+        _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableview.tableFooterView = [UIView new];
     }
     return _tableview;
@@ -65,7 +74,7 @@
                                           @{@"title":@"大姨"},
                                           @{@"title":@"大舅"},
                                           @{@"title":@"二姨"},
-                                          @{@"title":@"三姨"}]}];
+                                          @{@"title":@"小姑"}]}];
         
         for (NSInteger i = 0; i< [tempData count]; i++) {   //2个2级标题
             
@@ -154,7 +163,27 @@
     return CGFLOAT_MIN;
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    MyModel *model = self.dataArray[section];
+    NSString *title = model.title;
+    
+    UIControl *titleView = [[UIControl alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 35)];
+    titleView.tag = 2014+section;
+    titleView.backgroundColor = [UIColor whiteColor];
+    [titleView addTarget:self action:@selector(sectionAction:) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:titleView];
+    
+    UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 0, 25)];
+    textLabel.font = [UIFont systemFontOfSize:14];
+    textLabel.backgroundColor = [UIColor clearColor];
+    textLabel.textColor = [UIColor grayColor];
+    textLabel.text = title;
+    [textLabel sizeToFit];
+    [view addSubview:textLabel];
+}
 
+
+/*
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section  {
     MyModel *model = self.dataArray[section];
     NSString *title = model.title;
@@ -177,6 +206,8 @@
     
     return titleView;
 }
+ 
+ */
 
 - (void)sectionAction:(UIControl *)control {
     NSInteger section = control.tag - 2014;

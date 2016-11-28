@@ -11,6 +11,7 @@
 #import "SwipCellViewController.h"
 #import "HeaderStrechViewController.h"
 #import "TableViewListViewController.h"
+#import "MenuViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -49,7 +50,7 @@
     if (!_dataArray) {
         _dataArray = [NSMutableArray array];
         
-        NSArray *arr = @[@"仿微信cell左滑菜单按钮", @"个人中心头像拉伸动画", @"仿QQ列表展开收起"];
+        NSArray *arr = @[@"仿微信cell左滑菜单按钮", @"个人中心头像拉伸动画", @"仿QQ列表展开收起", @"仿QQ的动态菜单"];
         [_dataArray addObjectsFromArray:arr];
     }
     return _dataArray;
@@ -96,6 +97,13 @@
         case 2:
         {
             TableViewListViewController *vc = [[TableViewListViewController alloc] init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            MenuViewController *vc = [[MenuViewController alloc] init];
             vc.title = self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;
