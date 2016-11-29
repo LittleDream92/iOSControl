@@ -7,7 +7,24 @@
 //
 
 #import "CategoryModel.h"
+#import "NSObject+Property.h"
 
 @implementation CategoryModel
+
++(NSDictionary *)objectClassInArray {
+    return @{@"spus" : @"FoodModel"};
+}
+
+@end
+
+
+
+
+
+@implementation FoodModel
+
++(NSDictionary *)replacedKeyFromPropertyName  {
+    return @{@"foodId" : @"id"};
+}
 
 @end
