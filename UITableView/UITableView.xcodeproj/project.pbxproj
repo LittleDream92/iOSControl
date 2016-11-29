@@ -31,6 +31,10 @@
 		A815D6E21DED58E600ADFAC8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6D31DED58E600ADFAC8 /* UIImageView+WebCache.m */; };
 		A815D6E31DED58E600ADFAC8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6D51DED58E600ADFAC8 /* UIView+WebCacheOperation.m */; };
 		A815D6E61DED59EF00ADFAC8 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6E51DED59EF00ADFAC8 /* TableViewHeaderView.m */; };
+		A815D6EC1DED5E5C00ADFAC8 /* CollectionCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6EB1DED5E5C00ADFAC8 /* CollectionCategoryModel.m */; };
+		A815D6F01DED612900ADFAC8 /* LJCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6EF1DED612900ADFAC8 /* LJCollectionViewFlowLayout.m */; };
+		A815D6F31DED628B00ADFAC8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6F21DED628B00ADFAC8 /* CollectionViewCell.m */; };
+		A815D6F61DED629600ADFAC8 /* CollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6F51DED629600ADFAC8 /* CollectionViewHeaderView.m */; };
 		A8C34E8A1DE7E34D00BFC4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E891DE7E34D00BFC4F5 /* main.m */; };
 		A8C34E8D1DE7E34D00BFC4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E8C1DE7E34D00BFC4F5 /* AppDelegate.m */; };
 		A8C34E901DE7E34D00BFC4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E8F1DE7E34D00BFC4F5 /* ViewController.m */; };
@@ -99,6 +103,14 @@
 		A815D6D51DED58E600ADFAC8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		A815D6E41DED59EF00ADFAC8 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
 		A815D6E51DED59EF00ADFAC8 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
+		A815D6EA1DED5E5C00ADFAC8 /* CollectionCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCategoryModel.h; sourceTree = "<group>"; };
+		A815D6EB1DED5E5C00ADFAC8 /* CollectionCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCategoryModel.m; sourceTree = "<group>"; };
+		A815D6EE1DED612900ADFAC8 /* LJCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A815D6EF1DED612900ADFAC8 /* LJCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A815D6F11DED628B00ADFAC8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		A815D6F21DED628B00ADFAC8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		A815D6F41DED629600ADFAC8 /* CollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderView.h; sourceTree = "<group>"; };
+		A815D6F51DED629600ADFAC8 /* CollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderView.m; sourceTree = "<group>"; };
 		A8C34E851DE7E34D00BFC4F5 /* UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C34E891DE7E34D00BFC4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C34E8B1DE7E34D00BFC4F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,10 +171,10 @@
 		A815D6A91DED261400ADFAC8 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				A815D6E41DED59EF00ADFAC8 /* TableViewHeaderView.h */,
-				A815D6E51DED59EF00ADFAC8 /* TableViewHeaderView.m */,
 				A815D69F1DED230500ADFAC8 /* TableViewViewController.h */,
 				A815D6A01DED230500ADFAC8 /* TableViewViewController.m */,
+				A815D6E41DED59EF00ADFAC8 /* TableViewHeaderView.h */,
+				A815D6E51DED59EF00ADFAC8 /* TableViewHeaderView.m */,
 				A815D6AB1DED299600ADFAC8 /* CategoryModel.h */,
 				A815D6AC1DED299600ADFAC8 /* CategoryModel.m */,
 				A815D6B21DED30AA00ADFAC8 /* LeftTableViewCell.h */,
@@ -178,6 +190,12 @@
 			children = (
 				A815D6A21DED230D00ADFAC8 /* CollectionViewViewController.h */,
 				A815D6A31DED230D00ADFAC8 /* CollectionViewViewController.m */,
+				A815D6F41DED629600ADFAC8 /* CollectionViewHeaderView.h */,
+				A815D6F51DED629600ADFAC8 /* CollectionViewHeaderView.m */,
+				A815D6EA1DED5E5C00ADFAC8 /* CollectionCategoryModel.h */,
+				A815D6EB1DED5E5C00ADFAC8 /* CollectionCategoryModel.m */,
+				A815D6F11DED628B00ADFAC8 /* CollectionViewCell.h */,
+				A815D6F21DED628B00ADFAC8 /* CollectionViewCell.m */,
 			);
 			name = CollectionView;
 			sourceTree = "<group>";
@@ -187,6 +205,8 @@
 			children = (
 				A815D6AF1DED2A1700ADFAC8 /* NSObject+Property.h */,
 				A815D6B01DED2A1700ADFAC8 /* NSObject+Property.m */,
+				A815D6EE1DED612900ADFAC8 /* LJCollectionViewFlowLayout.h */,
+				A815D6EF1DED612900ADFAC8 /* LJCollectionViewFlowLayout.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -414,6 +434,7 @@
 				A815D6E11DED58E600ADFAC8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A815D6A11DED230500ADFAC8 /* TableViewViewController.m in Sources */,
 				A815D6DB1DED58E600ADFAC8 /* SDWebImageDownloaderOperation.m in Sources */,
+				A815D6F31DED628B00ADFAC8 /* CollectionViewCell.m in Sources */,
 				A8FA1DC01DEC28FD0008C1CB /* SecondViewController.m in Sources */,
 				A8FA1DB31DEC28980008C1CB /* MenuViewController.m in Sources */,
 				A815D6D91DED58E600ADFAC8 /* SDWebImageDecoder.m in Sources */,
@@ -427,6 +448,7 @@
 				A815D6DC1DED58E600ADFAC8 /* SDWebImageManager.m in Sources */,
 				A8C34EB01DE8139D00BFC4F5 /* HFStretchableTableHeaderView.m in Sources */,
 				A8FA1DBD1DEC28B40008C1CB /* MenuView.m in Sources */,
+				A815D6F61DED629600ADFAC8 /* CollectionViewHeaderView.m in Sources */,
 				A815D6AD1DED299600ADFAC8 /* CategoryModel.m in Sources */,
 				A815D6DA1DED58E600ADFAC8 /* SDWebImageDownloader.m in Sources */,
 				A815D6E61DED59EF00ADFAC8 /* TableViewHeaderView.m in Sources */,
@@ -439,10 +461,12 @@
 				A815D6E01DED58E600ADFAC8 /* UIImage+MultiFormat.m in Sources */,
 				A8C34EB51DE813B500BFC4F5 /* HeaderStrechViewController.m in Sources */,
 				A815D6D81DED58E600ADFAC8 /* SDWebImageCompat.m in Sources */,
+				A815D6EC1DED5E5C00ADFAC8 /* CollectionCategoryModel.m in Sources */,
 				A8C34EBF1DE82A5F00BFC4F5 /* TableViewListViewController.m in Sources */,
 				A8C34E8A1DE7E34D00BFC4F5 /* main.m in Sources */,
 				A815D6DE1DED58E600ADFAC8 /* UIButton+WebCache.m in Sources */,
 				A815D6A41DED230D00ADFAC8 /* CollectionViewViewController.m in Sources */,
+				A815D6F01DED612900ADFAC8 /* LJCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
