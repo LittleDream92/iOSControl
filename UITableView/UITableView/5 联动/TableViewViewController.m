@@ -176,11 +176,57 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (_leftTableView == tableView) {
-        
+        _selectIndex = indexPath.row;
+        [_rightTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:_selectIndex] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        [_leftTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_selectIndex inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     }else {
         
     }
 }
+
+
+// TableView分区标题即将展示
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(nonnull UIView *)view forSection:(NSInteger)section
+{
+    // 当前的tableView是RightTableView，RightTableView滚动的方向向上，RightTableView是用户拖拽而产生滚动的（（主要判断RightTableView用户拖拽而滚动的，还是点击LeftTableView而滚动的）
+    if ((_rightTableView == tableView) && !_isScrollDown && _rightTableView.dragging)
+    {
+        [self selectRowAtIndexPath:section];
+    }
+}
+
+// TableView分区标题展示结束
+- (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    // 当前的tableView是RightTableView，RightTableView滚动的方向向下，RightTableView是用户拖拽而产生滚动的（（主要判断RightTableView用户拖拽而滚动的，还是点击LeftTableView而滚动的）
+    if ((_rightTableView == tableView) && _isScrollDown && _rightTableView.dragging)
+    {
+        [self selectRowAtIndexPath:section + 1];
+    }
+}
+
+//拖动右边tableView时左边tableView跟着动
+- (void)selectRowAtIndexPath:(NSInteger)index
+{
+    [_leftTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
+}
+
+
+#pragma mark - scrollView
+//标记一下右边的滚动方向，向上还是向下
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    static CGFloat lastOffsetY = 0;
+    
+    UITableView *tableView = (UITableView *) scrollView;
+    if (_rightTableView == tableView)
+    {
+        _isScrollDown = lastOffsetY < scrollView.contentOffset.y;
+        lastOffsetY = scrollView.contentOffset.y;
+    }
+}
+
+
+
 
 
 #pragma mark -
