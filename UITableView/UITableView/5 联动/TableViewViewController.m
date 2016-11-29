@@ -11,8 +11,14 @@
 #import "CategoryModel.h"
 
 #import "LeftTableViewCell.h"
+#import "RightTableViewCell.h"
+#import "TableViewHeaderView.h"
 
 @interface TableViewViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    NSInteger _selectIndex;
+    BOOL _isScrollDown;
+}
 
 @property (nonatomic, strong) UITableView *leftTableView;
 @property (nonatomic, strong) UITableView *rightTableView;
@@ -60,7 +66,7 @@
     [self.view addSubview:self.leftTableView];
     [self.view addSubview:self.rightTableView];
     
-    //默认
+    //设置默认点击选中事件
     [self.leftTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
 }
 
@@ -86,9 +92,17 @@
 
 -(UITableView *)rightTableView {
     if (!_rightTableView) {
-        _rightTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _rightTableView = [[UITableView alloc] initWithFrame:CGRectMake(80, 64, self.view.bounds.size.width-80, self.view.bounds.size.height) style:UITableViewStylePlain];
         
+        _rightTableView.delegate = self;
+        _rightTableView.dataSource = self;
+        
+        _rightTableView.rowHeight = 80;
+        _rightTableView.showsVerticalScrollIndicator = NO;
         _rightTableView.tableFooterView = [UIView new];
+        
+        //注册单元格
+        [_rightTableView registerClass:[RightTableViewCell class] forCellReuseIdentifier:kCellIdentifier_Right];
     }
     return _rightTableView;
 }
@@ -111,21 +125,62 @@
 
 #pragma mark - UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    if (_leftTableView == tableView) {
+        return 1;
+    }else {
+        return self.categoryData.count;
+    }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.categoryData.count;
+    if (_leftTableView == tableView) {
+        return self.categoryData.count;
+    }else {
+        return [self.foodData[section] count];
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LeftTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_Left forIndexPath:indexPath];
-    FoodModel *model = self.categoryData[indexPath.row];
-    cell.name.text = model.name;
-    return cell;
+    if (_leftTableView == tableView) {
+        LeftTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_Left forIndexPath:indexPath];
+        FoodModel *model = self.categoryData[indexPath.row];
+        cell.name.text = model.name;
+        return cell;
+    }else {
+        RightTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_Right forIndexPath:indexPath];
+        
+        FoodModel *model = self.foodData[indexPath.section][indexPath.row];
+        cell.model = model;
+        
+        return cell;
+    }
 }
 
 #pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (_rightTableView == tableView) {
+        return 20;
+    }
+    return 0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (_rightTableView == tableView) {
+        TableViewHeaderView *view = [[TableViewHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
+        FoodModel *model = self.categoryData[section];
+        view.name.text = model.name;
+        return view;
+    }
+    return nil;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_leftTableView == tableView) {
+        
+    }else {
+        
+    }
+}
 
 
 #pragma mark -

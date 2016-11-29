@@ -18,8 +18,6 @@
 @end
 
 
-
-
 @implementation LeftTableViewCell
 
 - (void)awakeFromNib {
@@ -27,6 +25,7 @@
     // Initialization code
 }
 
+//处理点击事件
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
