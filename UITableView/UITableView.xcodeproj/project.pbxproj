@@ -12,6 +12,8 @@
 		A815D6A41DED230D00ADFAC8 /* CollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6A31DED230D00ADFAC8 /* CollectionViewViewController.m */; };
 		A815D6A71DED25D800ADFAC8 /* liwushuo.json in Resources */ = {isa = PBXBuildFile; fileRef = A815D6A51DED25D800ADFAC8 /* liwushuo.json */; };
 		A815D6A81DED25D800ADFAC8 /* meituan.json in Resources */ = {isa = PBXBuildFile; fileRef = A815D6A61DED25D800ADFAC8 /* meituan.json */; };
+		A815D6AD1DED299600ADFAC8 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6AC1DED299600ADFAC8 /* CategoryModel.m */; };
+		A815D6B11DED2A1700ADFAC8 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A815D6B01DED2A1700ADFAC8 /* NSObject+Property.m */; };
 		A8C34E8A1DE7E34D00BFC4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E891DE7E34D00BFC4F5 /* main.m */; };
 		A8C34E8D1DE7E34D00BFC4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E8C1DE7E34D00BFC4F5 /* AppDelegate.m */; };
 		A8C34E901DE7E34D00BFC4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C34E8F1DE7E34D00BFC4F5 /* ViewController.m */; };
@@ -41,6 +43,10 @@
 		A815D6A31DED230D00ADFAC8 /* CollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewViewController.m; sourceTree = "<group>"; };
 		A815D6A51DED25D800ADFAC8 /* liwushuo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = liwushuo.json; path = "5 联动/liwushuo.json"; sourceTree = "<group>"; };
 		A815D6A61DED25D800ADFAC8 /* meituan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = meituan.json; path = "5 联动/meituan.json"; sourceTree = "<group>"; };
+		A815D6AB1DED299600ADFAC8 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		A815D6AC1DED299600ADFAC8 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		A815D6AF1DED2A1700ADFAC8 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		A815D6B01DED2A1700ADFAC8 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A8C34E851DE7E34D00BFC4F5 /* UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C34E891DE7E34D00BFC4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C34E8B1DE7E34D00BFC4F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,12 +97,40 @@
 			children = (
 				A815D69C1DED18A800ADFAC8 /* LianDongTableViewController.h */,
 				A815D69D1DED18A800ADFAC8 /* LianDongTableViewController.m */,
+				A815D6AE1DED29F900ADFAC8 /* Tool */,
+				A815D6A91DED261400ADFAC8 /* TableView */,
+				A815D6AA1DED261D00ADFAC8 /* CollectionView */,
+			);
+			path = "5 联动";
+			sourceTree = "<group>";
+		};
+		A815D6A91DED261400ADFAC8 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
 				A815D69F1DED230500ADFAC8 /* TableViewViewController.h */,
 				A815D6A01DED230500ADFAC8 /* TableViewViewController.m */,
+				A815D6AB1DED299600ADFAC8 /* CategoryModel.h */,
+				A815D6AC1DED299600ADFAC8 /* CategoryModel.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		A815D6AA1DED261D00ADFAC8 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
 				A815D6A21DED230D00ADFAC8 /* CollectionViewViewController.h */,
 				A815D6A31DED230D00ADFAC8 /* CollectionViewViewController.m */,
 			);
-			path = "5 联动";
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		A815D6AE1DED29F900ADFAC8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A815D6AF1DED2A1700ADFAC8 /* NSObject+Property.h */,
+				A815D6B01DED2A1700ADFAC8 /* NSObject+Property.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		A8C34E7C1DE7E34D00BFC4F5 = {
@@ -283,11 +317,13 @@
 				A815D6A11DED230500ADFAC8 /* TableViewViewController.m in Sources */,
 				A8FA1DC01DEC28FD0008C1CB /* SecondViewController.m in Sources */,
 				A8FA1DB31DEC28980008C1CB /* MenuViewController.m in Sources */,
+				A815D6B11DED2A1700ADFAC8 /* NSObject+Property.m in Sources */,
 				A815D69E1DED18A800ADFAC8 /* LianDongTableViewController.m in Sources */,
 				A8FA1DBB1DEC28B40008C1CB /* MenuModel.m in Sources */,
 				A8C34EBC1DE82A4200BFC4F5 /* MyModel.m in Sources */,
 				A8C34EB01DE8139D00BFC4F5 /* HFStretchableTableHeaderView.m in Sources */,
 				A8FA1DBD1DEC28B40008C1CB /* MenuView.m in Sources */,
+				A815D6AD1DED299600ADFAC8 /* CategoryModel.m in Sources */,
 				A8C34EA21DE7E4BC00BFC4F5 /* SwipCellViewController.m in Sources */,
 				A8C34E8D1DE7E34D00BFC4F5 /* AppDelegate.m in Sources */,
 				A8FA1DBC1DEC28B40008C1CB /* MenuTableViewCell.m in Sources */,

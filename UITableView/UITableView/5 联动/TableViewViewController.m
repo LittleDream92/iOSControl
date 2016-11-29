@@ -20,12 +20,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setUpData];
+    [self setUpViews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - setUp
+//处理本地json数据
+- (void)setUpData {
+    //获取路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"meituan" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSArray *foods = dict[@"data"][@"food_spu_tags"];
+    
+    for (NSDictionary *dict in foods) {
+        
+    }
 }
+
+- (void)setUpViews {
+    [self.view addSubview:self.leftTableView];
+    [self.view addSubview:self.rightTableView];
+}
+
+
 
 #pragma mark - lazyLoading
 -(UITableView *)leftTableView {
@@ -52,6 +71,14 @@
 
 
 #pragma mark - UITableViewDelegate
+
+
+#pragma mark -
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 
 @end
