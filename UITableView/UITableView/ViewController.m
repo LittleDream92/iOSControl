@@ -12,6 +12,7 @@
 #import "HeaderStrechViewController.h"
 #import "TableViewListViewController.h"
 #import "MenuViewController.h"
+#import "LianDongTableViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -50,7 +51,7 @@
     if (!_dataArray) {
         _dataArray = [NSMutableArray array];
         
-        NSArray *arr = @[@"仿微信cell左滑菜单按钮", @"个人中心头像拉伸动画", @"仿QQ列表展开收起", @"仿QQ的动态菜单"];
+        NSArray *arr = @[@"仿微信cell左滑菜单按钮", @"个人中心头像拉伸动画", @"仿QQ列表展开收起", @"仿QQ的动态菜单", @"联动"];
         [_dataArray addObjectsFromArray:arr];
     }
     return _dataArray;
@@ -104,6 +105,13 @@
         case 3:
         {
             MenuViewController *vc = [[MenuViewController alloc] init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:
+        {
+            LianDongTableViewController *vc = [[LianDongTableViewController alloc] init];
             vc.title = self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
             break;
